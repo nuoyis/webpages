@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="https://static.nuoyis.com/favicon.ico">
+<link rel="bookmark" href="https://static.nuoyis.com/favicon.ico">
+<title>页面错误 - 雨晨风蓝</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="https://static.nuoyis.com/static/lovablewyh-library/404/css/style.css" type="text/css" media="all">
+<link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="yu-error">
+		<div class="wrapper">
+			<div class="yu-error-main-top">
+				<div class="yu-info">
+				<section class="error-container">
+				    <span id="code"></span>
+					</section>
+					<p>咦？页面出错了?!</p>
+					<p>很抱歉，您所访问的页面未能找到或出现了未知错误</p>
+					<p>请您稍后尝试</p>
+					<p>操作按钮(放置查看操作名称)</p><br/>
+					<div class="yu-icons">
+						<a href="javascript:window.location.reload();" title="刷新页面"><span class="fa fa-spinner" aria-hidden="true"></span></a>
+						<a href="/" title="主页"><span class="fa fa-home" aria-hidden="true"></span></a>
+						<a href="https://blog.nuoyis.com/" title="博客"><span class="fa fa-wordpress" aria-hidden="true"></span></a>
+					</div>
+				</div>
+
+			</div>
+			<div class="xwfooter">
+				<div class="copy-right">
+					<p>@2020 - 至今<a href="https://www.nuoyis.com/" target="_blank" title="版权所有">&nbsp;&nbsp;诺依阁</a>&  <a href="https://xuvce.com/" target="_blank" title="版权所有">雨晨风蓝</a>     版权所有</p>
+                                                                                 <p><a href="//beian.miit.gov.cn">鄂ICP备2023004941号-1</a>  |  <img src="https://static.nuoyis.com/static/lovablewyh-library/blog/cuckoo/images/beian.png">鄂公网安备 <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011702000728">42011702000728</a>号</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+var error = 404;
+addEventListener("load", function () {
+	setTimeout(hideURLbar, 0);
+}, false);
+function hideURLbar() {
+	window.scrollTo(0, 1);
+}
+
+function GetRequest() {
+   var url = location.search;
+   //获取url中"?"符后的字串
+   var theRequest = new Object(); 
+   if (url.indexOf("?") != -1) { 
+      var str = url.substr(1); 
+      //获取url中"?"符后的字串中的"?"并进行切割
+      strs = str.split(/\?|\&/);
+      for(var i = 0; i < strs.length; i ++){
+         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+      }  
+   }
+   return theRequest;  
+   
+}  
+window.onload = function() {
+   error = GetRequest();
+   if (error.error == undefined) {
+       code.innerHTML = "404";
+	   document.title="404错误 - 雨晨风蓝"
+   } else if(error.error.length<=3){
+       code.innerHTML = error.error;
+	   document.title = error.error+"错误 - 雨晨风蓝"
+   }else{
+       code.innerHTML = "404";
+	   document.title="404错误 - 雨晨风蓝"
+   }
+}
+</script>
+
+</body></html>
