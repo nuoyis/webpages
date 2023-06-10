@@ -256,6 +256,12 @@ footer a {
 	}
 }
 
+@media screen and (min-width:1000px){
+     .nuoyis-header .nuoyis-header-content {
+	    padding-top: 20%!important;
+    }
+}
+
 @media screen and (min-width:631px) and (max-width:900px){
     footer {
     	bottom: 0;
@@ -270,10 +276,6 @@ footer a {
         color: #aaa;
         margin-left: 10px;
         line-height: 24px;
-    }
-	
-     .nuoyis-header .nuoyis-header-content {
-	 padding-top: 30%!important;
     }
 }
 
