@@ -27,4 +27,17 @@
 	"url": "https://afdian.net/a/nuoyis",
 	"images": "",
 	"description": "爱发电赞助平台，理性赞助"
-}]
+},
+{
+	"name": "云盘下载站(测试)",
+	"url": "https://download.nuoyis.com",
+	"images": "",
+	"description": "由城通网盘提供"
+},
+{
+	"name": "云盘",
+	"url": "https://pan.nuoyis.com",
+	"images": "",
+	"description": "由 AList 驱动和移动云盘作为后端组成的云盘"
+},
+]
