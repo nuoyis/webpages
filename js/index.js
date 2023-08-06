@@ -49,7 +49,6 @@ nuoweb += `
 			</a>`
 }
 }
-console.log(nuoweb);
 document.getElementById("nuoyis-dev").innerHTML = nuoweb; 
 }
 
@@ -120,6 +119,20 @@ $.ajax({
 });
 return retdata;
 }
+
+function scroll() {
+	var top = $(".nuoyis-header").offset().top;//获取导航栏变色的位置距顶部的高度
+	var scrollTop = $(window).scrollTop();//获取当前窗口距顶部的高度
+	if (scrollTop <= top) {
+		$('.nuoyis-nav').css('background-color', 'transparent');
+	} else {
+		$('.nuoyis-nav').css('background-color', '#00FFFF');
+	}
+}
+$(window).on('scroll', function() {
+	scroll()
+});
+
 banquan();
 mydev();
 friend();
