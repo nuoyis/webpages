@@ -329,7 +329,6 @@ footer a {
 @media screen and (min-width:631px) and (max-width:900px){
     footer {
     	bottom: 0;
-    	width: 100%;
         padding: max(1%,10px);
         background: rgba(255,255,255,.8);
         margin-left: auto;
@@ -352,7 +351,6 @@ footer a {
 @media screen and (min-width:901px){
     footer {
     	bottom: 0;
-    	width: 100%;
         padding: max(2%,15px);
         background: rgba(255,255,255,.8);
         margin-left: auto;
