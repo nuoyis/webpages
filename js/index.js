@@ -125,8 +125,12 @@ function scroll() {
 	var scrollTop = $(window).scrollTop();//获取当前窗口距顶部的高度
 	if (scrollTop <= top) {
 		$('.nuoyis-nav').css('background-color', 'transparent');
+		$('nuoyis-logo a').css('color', 'white');
+		$('nuoyis-nav-text a').css('color', 'white');
 	} else {
-		$('.nuoyis-nav').css('background-color', '#00FFFF');
+		$('.nuoyis-nav').css('background-color', 'rgba(255,255,255,.8)');
+		$('nuoyis-logo a').css('color', 'black');
+		$('nuoyis-nav-text a').css('color', 'black');
 	}
 }
 $(window).on('scroll', function() {

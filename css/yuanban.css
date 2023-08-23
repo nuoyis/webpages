@@ -77,6 +77,7 @@ body::-webkit-scrollbar {
 .nuoyis-nav{
 	z-index: 300;
     width: 100%;
+    top:0;
 	height: calc(3.6rem - 1px);
 	position: fixed;
 	display: flex;
@@ -84,55 +85,6 @@ body::-webkit-scrollbar {
 	text-align: center;
 	align-items: center;
 	
-}
-
-@media only screen and (min-width: 900px){
-	.nuoyis-nav{
-		justify-content: space-between;
-	}
-	
-	.nuoyis-logo{
-		margin-top: 5px;
-		margin-left: 8%;
-	}
-	
-	.nuoyis-logo a{
-		color: white;
-		text-align: center;
-		font-size:25px;
-		text-decoration: none;
-	}
-	
-	.nuoyis-nav-text a {
-	    color: white;
-	    margin-right: 50px;
-	    text-align: center;
-	    padding: 10px 10px;
-	    text-decoration: none;
-	}
-	
-}
-
-@media only screen and (max-width: 768px){
-	.nuoyis-logo {
-	    margin-left: 5%;
-	}
-	
-	.nuoyis-logo a{
-		color: white;
-		text-align: center;
-		font-size:5px;
-		text-decoration: none;
-	}
-	
-	.nuoyis-nav-text a {
-		color: white;
-		/* margin-right: 50px; */
-		text-align: center;
-		font-size: 5px;
-		padding: 0px 5px;
-		text-decoration: none;
-	}
 }
 
 .nuoyis-header {
@@ -147,7 +99,6 @@ body::-webkit-scrollbar {
 }
 
 .nuoyis-header .nuoyis-header-content {
-	padding-top: 25%;
 	padding-bottom: 2.125rem;
 	text-align: center;
 }
@@ -222,7 +173,7 @@ body::-webkit-scrollbar {
     font-size: 14px;
     cursor: pointer;
     text-decoration: none;
-    background-color: #fa9200;
+    background-color:#f2f2f2;
     box-shadow: 4px 6px 16px gray;
     transition: transform 0.5s,background 0.5s;
 }
@@ -250,7 +201,7 @@ body::-webkit-scrollbar {
 }
 
 .nuoyis-project-text{
-    color: #66CCFF;
+    color: black;
     padding: 0 0 5px;
 }
 
@@ -270,16 +221,25 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
 }
 
+.nuoyis-tree-about,.nuoyis-daohang,.nuoyis-youlian,.nuoyis-zanzhu{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
 .nuoyis-daohang-header{
-  display: initial;
-  padding-bottom: 30px;
-  background-image: linear-gradient(135deg, #f02fc2, #6094ea, #fdcbf1, #fe3dc4);
-  background-size: 500%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  animation: bgAnimation 10s linear infinite;
+    display: initial;
+    padding-bottom: 30px;
+    background-image: linear-gradient(135deg, #f02fc2, #6094ea, #fdcbf1, #fe3dc4);
+    background-size: 500%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: bgAnimation 10s linear infinite;
+}
+
+footer{
+    background: rgba(255,255,255,.8);
 }
 
 footer a {
@@ -288,15 +248,11 @@ footer a {
 }
 
 .nuoyis-footer-layout{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 1280px;
     margin: 0 auto;
 }
 
 .nuoyis-footer-right{
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .nuoyis-copyright{
@@ -307,30 +263,111 @@ footer a {
 }
 
 @media screen and (max-width:630px) {
-    footer {
-        display: none;
-    }
     
 	.nuoyis-daohang-header{
-	  font-size: 45px;
+	    font-size: 45px;
 	}
 	
 	.nuoyis-header .nuoyis-header-content {
-	    padding-top: 50%!important;
+	    padding-top: 40vh;
 	}
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:630px){
      .nuoyis-header .nuoyis-header-content {
-	    padding-top: 20%!important;
+	    padding-top: 35vh;
     }
 }
 
-@media screen and (min-width:631px) and (max-width:900px){
+@media only screen and (max-width: 919px){
+	.nuoyis-logo {
+	    margin-left: 2%;
+	    margin-right: 2%;
+	}
+	
+	.nuoyis-logo a{
+		color: white;
+		text-align: center;
+		font-size:20px;
+		text-decoration: none;
+	}
+	
+	.nuoyis-nav-text a {
+		color: white;
+		text-align: center;
+		font-size: 10px;
+		padding: 0px 5px;
+		text-decoration: none;
+	}
+	
+	.nuoyis-tree-about{
+	   padding: 20px 20px;
+	}
+}
+
+@media screen and (min-width:631px){
+    .nuoyis-daohang-header{
+	  font-size: 65px;
+	}
+}
+
+@media screen and (min-width:920px){
+    .nuoyis-nav{
+		justify-content: space-between;
+	}
+	
+	.nuoyis-logo{
+		margin-top: 5px;
+		margin-left: 8%;
+	}
+	
+	.nuoyis-logo a{
+		color: white;
+		text-align: center;
+		font-size:25px;
+		text-decoration: none;
+	}
+	
+	.nuoyis-nav-text a {
+	    color: white;
+	    margin-right: 50px;
+	    text-align: center;
+	    padding: 10px 10px;
+	    text-decoration: none;
+	}
+    
+    .nuoyis-footer-left{
+        color: #aaa;
+        margin-left: 5vh;
+        margin-top: 10px;
+        line-height: 27px;
+    }
+    
+    .nuoyis-footer-layout{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100vh;
+    }
+    
+}
+
+@media screen and (max-width:999px){
+    footer {
+        padding: 20px 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .nuoyis-footer-right{
+        display:none;
+    }
+}
+
+@media screen and (min-width:1000px){
     footer {
     	bottom: 0;
         padding: max(1%,10px);
-        background: rgba(255,255,255,.8);
         margin-left: auto;
         margin-right: auto;
     }
@@ -340,28 +377,12 @@ footer a {
         margin-left: 10px;
         line-height: 24px;
     }
-}
-
-@media screen and (min-width:631px){
-    .nuoyis-daohang-header{
-	  font-size: 65px;
-	}
-}
-
-@media screen and (min-width:901px){
-    footer {
-    	bottom: 0;
-        padding: max(2%,15px);
-        background: rgba(255,255,255,.8);
-        margin-left: auto;
-        margin-right: auto;
-    }
     
-    .nuoyis-footer-left{
-        color: #aaa;
-        margin-left: calc(10vh);
-        margin-top: 10px;
-        line-height: 27px;
+    .nuoyis-footer-layout{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100vh;
     }
 }
 
