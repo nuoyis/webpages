@@ -7,7 +7,10 @@ on:
   push:
     branches: [main, master] # 当监测 main,master 的 push
     paths: # 监测所有 source 目录下的文件变动，所有 yml,json 后缀文件的变动。
-      - '*'
+      - '*.json'
+      - '*.js'
+      - '**.yml'
+      - '**/source/**'
 # 工作流执行的一个或多个任务
 jobs:
   # 任务名称
@@ -20,16 +23,16 @@ jobs:
       - name: Checkout 🛎️
         # 使用的操作 actions，可以使用公共仓库，本地仓库，别人的仓库的action
         # 拉取代码
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
 
       - name: Build and Deploy
         # 构建发布 Github pages
-        uses: JamesIves/github-pages-deploy-action@master
+        uses: JamesIves/github-pages-deploy-action@v4
         # 该步骤所需的环境变量
         env:
           ACCESS_TOKEN: ${{ secrets.ACTION_TOKEN }}
           # 在部署前要checkout的基本分支，默认是master
-          BASE_BRANCH: master # The branch the action should deploy from.
+          BASE_BRANCH: main # The branch the action should deploy from.
           # 指定部署的分支，默认是 gh-pages 分支
           BRANCH: gh-pages # The branch the action should deploy to.
           # 存储库中要部署的文件夹。
