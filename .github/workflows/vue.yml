@@ -2,8 +2,7 @@ name: GitHub Actions Build and Deploy Demo
 on:
   push:
     branches: [main, master] # 当监测 main,master 的 push
-    paths: # 监测所有 source 目录下的文件变动，所有 yml,json 后缀文件的变动。
-      - '*'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
