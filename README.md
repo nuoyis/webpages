@@ -1,29 +1,21 @@
-# nuoyis-web
+# webpages
+一个自己手写的展示单页
 
-This template should help get you started developing with Vue 3 in Vite.
+# 页面展示
 
-## Recommended IDE Setup
+# 展示站点
+[https://www.nuoyis.com](https://www.nuoyis.com)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# 免责声明与使用条款
+在下载前应遵守以下规则，先下载的遵循当前下载md规则，后下载接受最新规则。  
+下载则代表你已经阅读并同意。对于二创修改内容，可同样获取署名权和相应著作权  
+1.开源不等同于免费，对于下载单页保留设计署名权和著作权，对于反指本站整体单页相似而导致本开源库和站点下架，将追究相应法律责任  
+2.不得使用单页用于灰产或除学习外其他方面，一经发现取消开源授权  
+3.本站没有义务为你更新，不要搭建就说本站做的东西差，本站差你可以选择不用  
 
-## Customize configuration
+# 赞助个人和企业
+首先感谢[二蛋云](https://idc.yeyuing.cn/aff/PBGQAEYZ)对本站的赞助
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+# 本站引用相应站点资源
+本站为了安全稳定且加速开发周期，将部分深度优化和适配本站而使用原作者代码的进行公示，如果你的部分代码作者名称未贡献出来，请发送邮件至wkkjonlykang@vip.qq.com进行添加
+下面是公示名单:
