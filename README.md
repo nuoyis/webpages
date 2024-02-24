@@ -4,7 +4,7 @@
 # 页面展示
 
 # 展示站点
-[https://www.nuoyis.com](https://www.nuoyis.com)
+[https://www.nuoyis.net](https://www.nuoyis.net)
 
 # 免责声明与使用条款
 在下载前应遵守以下规则，先下载的遵循当前下载md规则，后下载接受最新规则。  
