@@ -5,7 +5,7 @@ name: Build and Deploy
 # 当前是 只有 master分支上触发 push 事件时才执行工作流任务
 on:
   push:
-    branches: [main, master] # 当监测 main,master 的 push
+    branches: [main] # 当监测 main,master 的 push
     paths: # 监测所有 source 目录下的文件变动，所有 yml,json 后缀文件的变动。
       - '*'
 # 工作流执行的一个或多个任务
