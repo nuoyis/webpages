@@ -1,0 +1,32 @@
+@import './base.css';
+
+@media screen and (min-width:1000px){
+  .nuoyis-header-text {
+    padding: 3% 0 0 15%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nuoyis-header-text p{
+    padding: 0 0 0 5px;
+    margin: 0 0 30px 0;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .nuoyis-header-text span:nth-child(1){
+    font-size: 150px;
+    font-weight: bold;
+    color: rgb(255, 164, 89);
+    text-shadow: 2px 5px 5px rgb(71, 36, 0);
+
+  }
+
+  .nuoyis-header-text span:nth-child(2) {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: rgb(255, 252, 250);
+    text-shadow: 2px 5px 5px rgb(10, 5, 0);
+  }
+}
