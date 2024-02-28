@@ -1,8 +1,7 @@
 <script setup>
-import nuoindex from './nuomain/index/index.vue'
-import HelloWorld from "@/新建文件夹/components/HelloWorld.vue";
+import nuoindex from '@/nuomain/nuorouter.vue'
 </script>
 
 <template>
-  <nuoindex msg="诺依阁的技术树" />
+  <nuoindex webname="诺依阁的技术树" />
 </template>

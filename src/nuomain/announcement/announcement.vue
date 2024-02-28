@@ -2,6 +2,8 @@
   <div class="nuoyis-header-text">
       <p>测试1
       </p>
+    <router-link to="/">首页</router-link>
   </div>
-  <router-link to="/">首页</router-link>
 </template>
+<script setup>
+</script>

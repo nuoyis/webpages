@@ -35,10 +35,10 @@ html,body{
   width:100%;
   height:100%;
   color: white;
-  background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url(https://images.nuoyis.net/acg/img-avif/1467.avif);
-  background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url(https://images.nuoyis.net/acg/img-avif/1467.avif);
-  background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url(https://images.nuoyis.net/acg/img-avif/1467.avif);
-  background-image: linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url(https://images.nuoyis.net/acg/img-avif/1467.avif);
+  background-image: -moz-linear-gradient(rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("https://images.nuoyis.net/acg/img-avif/1467.avif");
+  background-image: -webkit-linear-gradient(rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("https://images.nuoyis.net/acg/img-avif/1467.avif");
+  background-image: -ms-linear-gradient(rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("https://images.nuoyis.net/acg/img-avif/1467.avif");
+  background-image: linear-gradient(rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("https://images.nuoyis.net/acg/img-avif/1467.avif");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

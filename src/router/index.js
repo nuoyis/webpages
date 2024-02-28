@@ -1,23 +1,34 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createWebHashHistory, createRouter } from "vue-router";
+import Home from "@/nuomain/index/index.vue";
+import About from "@/nuomain/aboutme/aboutme.vue";
+import Announcement from "@/nuomain/announcement/announcement.vue"
+import NotFound from "@/nuomain/404/404.vue";
+
+const routes = [
+    {
+        path: "/:catchAll(.*)",
+        component: NotFound,
+    },
+    {
+        path: "/",
+        name: "Home",
+        component: Home,
+    },
+    {
+        path: "/aboutme",
+        name: "Aboutme",
+        component: About,
+    },
+    {
+        path: "/announcement",
+        name: "Announcement",
+        component: Announcement,
+    },
+];
+
 const router = createRouter({
     history: createWebHashHistory(),
-    routes: [
-        {
-            path: "/",
-            name: "home",
-            component: () => import('@/nuomain/main.vue')
-        },
-        {
-            path: "/aboutme",
-            name: "aboutme",
-            component: () => import('@/nuomain/aboutme/aboutme.vue')
-        },
-        {
-            path: "/announcement",
-            name: "announcement",
-            component: () => import('@/nuomain/announcement/announcement.vue')
-        },
-]
-})
+    routes,
+});
 
-export default router
+export default router;
