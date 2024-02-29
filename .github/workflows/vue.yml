@@ -1,5 +1,6 @@
 name: Build webpages for vue
 on:
+  workflow_dispatch:
   push:
     branches: [main, master] # 当监测 main,master 的 push
 
