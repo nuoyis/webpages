@@ -1,0 +1,1 @@
+import{_ as t,c as o,a as n,b as s,w as a,r,o as c,d as _}from"./index-BimsyYJ3.js";const d={},l={class:"nuoyis-header-text"};function i(u,f){const e=r("router-link");return c(),o("div",l,[n("div",null,[s(e,{to:"/",class:"routerbtn"},{default:a(()=>[_("首页")]),_:1})])])}const p=t(d,[["render",i]]);export{p as default};
