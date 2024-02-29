@@ -1,6 +1,6 @@
 <template>
-  <nuohead msg="诺依阁的技术树" />
-  <nuoindex webname="诺依阁的技术树" />
+  <nuohead msg="诺依阁的技术树"/>
+  <nuoindex webname="诺依阁的技术树"/>
   <footer>
     <nuofooter />
   </footer>

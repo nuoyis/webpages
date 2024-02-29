@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import App from './App.vue'
+import App from './app.vue'
 import router from './router/index'
 // import VueLazyload from 'vue-lazyload'
 // import ElementPlus from 'element-plus'
