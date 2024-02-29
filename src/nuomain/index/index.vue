@@ -7,7 +7,7 @@
     <p>
       {{ webname }}欢迎您<br>一个游走在互联网前沿边缘{{ nowdate-2020 }}年的小站<br/>
       指针方位: X轴:{{ x }}, Y轴{{ y }}<br/>
-      当前时间:{{ currentTime }}
+      当前北京时间:{{ currentTime }}
     </p>
     <div>
       <router-link to="/aboutme" class="routerbtn">点击查看</router-link>
