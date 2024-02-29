@@ -1,4 +1,4 @@
-name: GitHub Actions Build and Deploy Demo
+name: Build webpages for vue
 on:
   push:
     branches: [main, master] # 当监测 main,master 的 push
