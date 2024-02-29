@@ -1,20 +1,101 @@
 @import './base.css';
 
+.nuoyis-nav{
+  width: 100%;
+  height: 10%;
+}
+
+.nuoyis-nav-text{
+  width:80%;
+  padding:15px 15px 15px 15px;
+  margin:0 auto;
+}
+
+.nuoyis-nav-left{
+  float:left;
+}
+
+.nuoyis-nav-right li{
+  float:right;
+  list-style:none;
+  margin-right:5%;
+}
+
+.nuoyis-nav-left a,.nuoyis-nav-right a{
+  color:white;
+  text-decoration: none;
+}
+
+.routerbtn {
+  width: 100px;
+  padding: 15px;
+  border: 2px solid rgba(255, 145, 0);
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(255, 145, 0);
+  text-shadow: 2px 2px 5px rgba(15, 8, 0, 0.664);
+  background-color: rgba(255, 255, 255, 0.048);
+  text-decoration: none;
+}
+.nuoyis-about, .nuoyis-web-start, .nuoyis-web-sla, .nuoyis-web-make, .nuoyis-demo, .nuoyis-qiye, .nuoyis-callus {
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: calc(3vw);
+}
+
+.nuoyis-biaoti{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: calc(3vw);
+}
+
+.nuoyis-biaoti-underline{
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background-color: pink;
+}
+
+.nuoyis-zhengwen {
+  font-size: 1.10rem;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width:999px) {
+  .nuoyis-home {
+    text-align: center;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 30%;
+  }
+
+  .routerbtn {
+    font-size: 15px;
+  }
+}
+
 @media screen and (min-width:1000px){
-  .nuoyis-header-text {
-    padding: 3% 0 0 15%;
+  .nuoyis-main {
+    width: 65%;
+    height: 75%;
+    margin: 0 auto;
+  }
+
+  .nuoyis-home{
     display: flex;
     flex-direction: column;
   }
 
-  .nuoyis-header-text p{
+  .nuoyis-main p{
     padding: 0 0 0 5px;
     margin: 0 0 30px 0;
     font-weight: bold;
     font-size: 25px;
   }
 
-  .nuoyis-header-text span:nth-child(1){
+  .nuoyis-main span:nth-child(1){
     font-size: 150px;
     font-weight: bold;
     color: rgb(255, 164, 89);
@@ -22,7 +103,7 @@
 
   }
 
-  .nuoyis-header-text span:nth-child(2) {
+  .nuoyis-main span:nth-child(2) {
     font-size: 80px;
     font-weight: bold;
     margin-bottom: 30px;

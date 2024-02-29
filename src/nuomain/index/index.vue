@@ -1,17 +1,24 @@
 <template>
-  <div class="nuoyis-header-text">
+  <div class="nuoyis-home">
     <!-- 	<div class="nuoyis-header-text-1">欢迎来到诺依阁的技术树</div>
           <div class="nuoyis-header-text-2">Welcome to nuoyis's Pavilion Tech Tree</div> -->
     <span>WelCome</span>
     <span>to this site</span>
     <p>
-      {{ webname }}欢迎您<br>一个游走在互联网前沿边缘的小站
+      {{ webname }}欢迎您<br>一个游走在互联网前沿边缘{{ nowdate-2020 }}年的小站<br/>
+      指针方位: X轴:{{ x }}, Y轴{{ y }}<br/>
+      当前时间:{{ currentTime }}
     </p>
-      <router-link to="/aboutme">点击查看</router-link>
+    <div>
+      <router-link to="/aboutme" class="routerbtn">点击查看</router-link>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { useMouse, nuotime } from '@/function.js'
+const { x, y } = useMouse()
+const { nowdate, currentTime } = nuotime()
 defineProps({
   webname: {
     type: String,

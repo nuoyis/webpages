@@ -2,7 +2,7 @@
   <div class="nuoyis-nav">
     <div class="nuoyis-nav-text">
       <div class="nuoyis-nav-left">
-        <a href="#">{{ msg }}</a>
+        <router-link to="/">{{ msg }}</router-link>
       </div>
       <div class="nuoyis-nav-right">
         <ul>

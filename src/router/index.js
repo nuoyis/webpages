@@ -1,34 +1,36 @@
-import { createWebHashHistory, createRouter } from "vue-router";
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from "@/nuomain/index/index.vue";
-import About from "@/nuomain/aboutme/aboutme.vue";
-import Announcement from "@/nuomain/announcement/announcement.vue"
 import NotFound from "@/nuomain/404/404.vue";
 
-const routes = [
-    {
-        path: "/:catchAll(.*)",
-        component: NotFound,
-    },
-    {
-        path: "/",
-        name: "Home",
-        component: Home,
-    },
-    {
-        path: "/aboutme",
-        name: "Aboutme",
-        component: About,
-    },
-    {
-        path: "/announcement",
-        name: "Announcement",
-        component: Announcement,
-    },
-];
-
 const router = createRouter({
-    history: createWebHashHistory(),
-    routes,
-});
+    history: createWebHashHistory(import.meta.env.BASE_URL),
+    routes: [
+        {
+            path: "/:catchAll(.*)",
+            component: NotFound,
+        },
+        {
+            path: '/',
+            name: 'nuoyis-home',
+            component: Home
+        },
+        {
+            path: '/aboutme',
+            name: 'nuoyis-about',
+            // route level code-splitting
+            // this generates a separate chunk (About.[hash].js) for this route
+            // which is lazy-loaded when the route is visited.
+            component: () => import('@/nuomain/aboutme/aboutme.vue')
+        },
+        {
+            path: '/announcement',
+            name: 'announcement',
+            // route level code-splitting
+            // this generates a separate chunk (About.[hash].js) for this route
+            // which is lazy-loaded when the route is visited.
+            component: () => import('@/nuomain/announcement/announcement.vue')
+        },
+    ]
+})
 
-export default router;
+export default router
