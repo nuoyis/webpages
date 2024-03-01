@@ -1,4 +1,5 @@
 <template>
+  <div class="nuoyis-main">
   <div class="nuoyis-about">
     <div class="nuoyis-biaoti">
       <h1>关于站长</h1>
@@ -10,8 +11,9 @@
     </div>
     <div>
       <router-link to="/" class="routerbtn">首页</router-link>
-      <router-link to="/announcement" class="routerbtn">下一页</router-link>
+      <router-link to="/youlian" class="routerbtn">下一页(友链)</router-link>
     </div>
+  </div>
   </div>
 </template>
 <script setup>

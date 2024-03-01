@@ -45,22 +45,20 @@ html,body,#main{
   background-attachment: fixed;
 }
 
-footer{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 30px;
-  padding: 10px 0px 10px 0px;
-  background-color: black;
-  color: white;
-}
-
 .nuoyis-footer{
-  height:100%;
-  margin-left:5%;
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  padding: 1% 0 1% 0;
+  color: gray;
 }
 
 .nuoyis-footer a{
   text-decoration: none;
   color:#66CCFF;
+}
+
+.nuoyis-footer-main{
+  width:80%;
+  height:100%;
+  margin:0 auto;
 }
