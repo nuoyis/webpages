@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+    <title>API调用界面 - 诺依阁api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="nuoyis">
+    <link rel="shortcut icon" href="https://www.nuoyis.net/favicon.ico">
+    <link rel="stylesheet" href="//cdn.staticfile.org/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/search.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4015694772463475" crossorigin="anonymous"></script>
+    <!-- font-awesome 4.2.0 -->
+    <link href="//lib.baomitu.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- JQuery 2.2.4 -->
+    <script src="//lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+    <!-- JQuery-mousewheel 3.1.9 -->
+    <script src="//lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
+    <style type="text/css">
+    ins.adsbygoogle[data-ad-status="unfilled"] {
+    display: none !important;
+    }
+    </style>
+    </head>
+        <p class="title"></p>
+        <body>
+            <div class="container">
+                <div class="well" id="well">
+                    <p id="nuoyis-js-status">哇，Javascript正在加载</p>
+                    
+</div>
+    <!-- https://zhuanlan.zhihu.com/p/72581171 JS修改方案 -->
+    <script>
+    function getUrlParams(name) { // 不传name返回所有值，否则返回对应值
+    var url = window.location.search;
+    if (url.indexOf('?') == 1) { return false; }
+    url = url.substr(1);
+    url = url.split('&');
+    var name = name || '';
+    var nameres;
+    // 获取全部参数及其值
+    for(var i=0;i<url.length;i++) {
+        var info = url[i].split('=');
+        var obj = {};
+        obj[info[0]] = decodeURI(info[1]);
+        url[i] = obj;
+    }
+    // 如果传入一个参数名称，就匹配其值
+    if (name) {
+        for(var i=0;i<url.length;i++) {
+            for (const key in url[i]) {
+                if (key == name) {
+                    nameres = url[i][key];
+                }
+            }
+        }
+    } else {
+        nameres = url;
+    }
+    // 返回结果
+    return nameres;
+}
+
+function nuoajax(load,type,datatype){
+var status = 0;
+var wdata = "";
+$.ajax({
+ async:false,
+ url: load,
+ type: type,
+ dataType: datatype,
+ success: 
+ function (data) {
+    status = 1;
+    wdata= data;
+ },
+ error:
+ function(xhr,state,errorThrown){
+	status = 0;
+ }
+});
+return status,wdata;
+}
+
+url = window.location.href;
+var res1 = getUrlParams('id');
+var status,list = nuoajax("https://server-api.nuoyis.net/jiekou.json","GET","json");
+var nuoweb = '';
+if (status == 0){
+document.getElementById ("nuoyis-js-status").style.display = "none";
+i=res1 - 1;
+name=list[i].name;//名称
+dz=list[i].dz;//提交地址
+cs=list[i].cs;//参数
+gg=list[i].gg;//公告
+sl=list[i].sl;//示例
+sj=list[i].sj;//返回数据
+nuoweb += `
+<p>请求地址</p><pre><a href="${dz}">${dz}</a></pre><p>参数：</p><pre>${cs}</a></pre><p>调用示例</p><pre>${sl}</pre><p>返回数据</p><pre style="text-shadow: initial;"><span>${sj}</span></pre><p>接口通知</p><pre>${gg}</pre>
+`
+document.getElementById("well").innerHTML = nuoweb;
+}else if (list.length == 0){
+document.getElementById("well").innerHTML = "API为空，请站长添加后再试吧";
+}else{
+document.getElementById("well").innerHTML = "加载失败惹，请刷新页面";
+}
+    
+</script>
+</body>
+</html>

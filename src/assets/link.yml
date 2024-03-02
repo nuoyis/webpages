@@ -1,0 +1,105 @@
+- class_name:  页面设计作者
+  descr:  那些人，那些事
+  type: item
+  link_list:
+    - name: 王卓Sco	# 友链名称
+      link: https://blog.wzsco.top/	# 友链地址
+      avatar: https://bu.dusays.com/2023/12/19/658179febbfb5.png	# 显示头像
+      descr: 宁静致远，热爱生活。	# 友链简介
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、簡單且強大的網誌框架
+    - name: 理随のBlog
+      link: https://netlify.lisui.top
+      avatar: https://bu.dusays.com/2023/12/19/658179febbfb5.png
+      descr: 宁静致远，热爱生活。
+    - name: 王卓Sco	# 友链名称
+      link: https://blog.wzsco.top/	# 友链地址
+      avatar: https://bu.dusays.com/2023/12/19/658179febbfb5.png	# 显示头像
+      descr: 宁静致远，热爱生活。	# 友链简介
+    - name: solstice23’s Blog
+      link: https://solstice23.top
+      avatar: https://solstice23.top/friendlink_image/avatar/
+      descr: Debug the world.
+
+- class_name: 合作开发者站点
+  descr: 欢迎访问
+  type: item
+  link_list:
+    - name: 紗夕里
+      link: https://lolicon.team
+      avatar: https://lolicon.team/img/avatar.webp
+      descr: 
+    - name: 云萧的咕咕屋
+      link: https://blog.crrashh.cn
+      avatar: https://res.crrashh.cn/img/avatar.jpg
+      descr: Creating makes miracles.
+    - name: 碎言博客
+      link: https://suiyan.cc
+      avatar: https://suiyan.cc/assets/images/avatar.jpg
+      descr: 编程、学习、记录
+    - name: 清幽博客
+      link: https://www.7uun.com
+      avatar: https://www.7uun.com/favicon.ico
+      descr: 
+    - name: 天蒼人頡
+      link: https://ejsoon.win
+      avatar: https://ejsoon.win/favicon.ico
+      descr: 
+    - name: Rakien's Blog
+      link: https://rakien.top/
+      avatar: https://images.rakien.top/web/avatar.png
+      descr: 记录生活，心理学
+    - name: 由川博客
+      link: https://blog.youchuande.cn
+      avatar: https://img1.imgtp.com/2023/05/21/5SFmchxx.jpg
+      descr: 由川酱的个人博客
+    - name: 色戒
+      link: https://www.sej.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=22704144&s=0
+      descr: 色戒 - Lust Caution(www.sej.cn)多的就不做介绍了，您会明白的(˵¯͒〰¯͒...
+    - name: 两个笨笨
+      link: https://mkirin.top/
+      avatar: 
+      descr: 两个笨笨的blog
+    - name: UQUQ
+      link: https://www.uquq.cn
+      avatar: 
+      descr: 何以解忧，唯有暴富！
+    - name: 茫跟的小屋
+      link: https://www.mongon.cn
+      avatar: https://www.mongon.cn/logo.png
+      descr: 茫跟的一些个人日记、随笔
+    - name: 晓星浩&blog
+      link: https://blog.hyosungho.cn/
+      avatar: https://blog.hyosungho.cn/upload/0EB8FCD6-4C6B-4E65-9A6A-0D2E3BC63BCF.png
+      descr: 热爱科技，热爱生活
+    - name: 泠泫凝的异次元空间
+      link: https://lxnchan.cn
+      avatar: https://lxnchan.cn/assets/logo-v2.webp
+      descr: 先空着2333
+    - name: 小俊博客
+      link: https://www.smalljun.com/
+      avatar: https://img2.moeblog.vip/images/tDSD.png
+      descr: 小俊博客 - 博主是一个正宗的蛋蛋后，博客用来分享自己生活情感，平时遇到的各种问题与解决方法，记载了一些自己生活琐事，自己喜欢的文章，段子等，分享我喜欢的美好的事迹，多年以后回忆看看事件美好的事情。
+    - name: 老卢
+      link: https://b0ae.cn
+      avatar: https://b0ae.cn/tx/blog.png
+      descr: 利她，有价值，不打扰
+    - name: 倾城于你
+      link: https://qninq.cn
+      avatar: https://qninq.cn/favicon.ico
+      descr: 一个热爱分享的Typecho小站。
+    - name: 星辰论坛
+      link: https://blog.starchen.top
+      avatar: http://starchen.top/picture/storage/app/uploads/2023/11/27/65643dee9be43.png
+      descr: 一个技术、资源、工具、教程分享网站
+    - name: 即时社区
+      link: http://www.ykforum.com
+      avatar: 
+      descr: 
+    - name: 卓越笔记
+      link: http://xieboke.net
+      avatar: 分享所学技能，记录点滴生活
+      descr: http://pic.xieboke.net/joyoblog.png
