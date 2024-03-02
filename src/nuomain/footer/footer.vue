@@ -4,7 +4,7 @@
       <div class="nuoyis-footer-left">
         本站有任何违规和违法内容,请发送邮件<br>至wkkjonlykang@vip.qq.com,本站会在24天内解决完毕
         <br>
-        全站由<a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" title="又拍云CDN" alt="又拍云CDN"><img src="@/img/upyun_logo.webp" style="margin-bottom: -10px;margin-left: 3px" alt="CDN" width="70" height="35"></a>提供CDN加速/云存储服务
+        全站由<a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" title="又拍云CDN" alt="又拍云CDN"><img src="@/img/upyun_logo.webp" style="margin-bottom: -10px;margin-left: 3px" alt="CDN" width="70" height="35"></a>和<a href="https://www.sctes.com/" target="_blank"><img src="https://www.sctes.com/assets/logo.svg" alt="无畏云" width="55" height="24"/></a>提供CDN加速/云存储服务
         <br>
         <a href="//beian.miit.gov.cn">鄂ICP备2023004941号-2</a> | <img src="@/img/beian.png">鄂公网安备 <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011702000752">42011702000752</a>号
         <br>
