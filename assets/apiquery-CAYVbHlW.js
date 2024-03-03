@@ -1,0 +1,4 @@
+import{n as r,c as u,a as e,d as o,u as s,t as n,F as l,o as d}from"./index-DDZTKhSa.js";const i=e("p",null,"请求地址",-1),p=["href"],_=e("p",null,"参数：",-1),c=e("p",null,"调用示例",-1),h=e("p",null,"返回数据",-1),y={style:{"text-shadow":"initial"}},q=e("p",null,"接口通知",-1),j={__name:"apiquery",setup($){const{nuostatus:f,nuodata:t}=r("https://server-api.nuoyis.net/jiekou.json");return(a,m)=>(d(),u(l,null,[i,e("pre",null,[o(""),e("a",{href:s(t).data[a.$route.query.id-1].dz},n(s(t).data[a.$route.query.id-1].dz),9,p),o(`
+`)]),_,e("pre",null,"  "+n(s(t).data[a.$route.query.id-1].cs)+`
+`,1),c,e("pre",null,""+n(s(t).data[a.$route.query.id-1].sl)+`
+`,1),h,e("pre",y,[e("span",null,n(s(t).data[a.$route.query.id-1].gg),1)]),q,e("pre",null,"状态: "+n(s(t).data[a.$route.query.id-1].state)+","+n(s(t).data[a.$route.query.id-1].sj)+" ",1)],64))}};export{j as default};
