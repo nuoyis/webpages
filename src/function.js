@@ -1,4 +1,5 @@
 import { ref, onMounted, onUnmounted } from 'vue'
+import axios from "axios";
 
 // 按照惯例，组合式函数名以“use”开头
 export function useMouse() {
@@ -36,4 +37,19 @@ export function nuotime() {
             currentTime.value = `${year}年${month}月${day}日 ${hours}时${minutes}分${seconds}秒`;
         }, 1000);
     return { nowdate, currentTime }
+}
+
+export function nuorequst(url) {
+    const nuostatus = ref(200)
+    const nuodata = ref(null)
+    axios
+        .get(url)
+        .then(response => {
+            nuodata.value = response;
+        })
+        .catch(error => {
+            nuostatus.value = 500;
+            nuodata.value = response;
+    })
+    return { nuostatus, nuodata }
 }
