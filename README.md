@@ -14,4 +14,4 @@
 3.本站没有义务为你更新，不要搭建就说本站做的东西差，本站差你可以选择不用  
 
 # 赞助个人和企业
-[雨云](https://www.rainyun.com/nuoyis_)提供海外加速云计算支持,由 < img class="" src="https://www.sctes.com/assets/logo.svg" alt="无畏云" width="55" height="24" />< a href="https://www.sctes.com/" target="_blank">< /a>提供 < a href="https://www.sctes.com/" target="_blank">CDN加速/云存储服务
+[雨云](https://www.rainyun.com/nuoyis_)提供海外加速云计算支持,由 <img class="" src="https://www.sctes.com/assets/logo.svg" alt="无畏云" width="55" height="24" /><a href="https://www.sctes.com/" target="_blank"></a>提供 <a href="https://www.sctes.com/" target="_blank">CDN加速/云存储服务</a>
