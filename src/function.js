@@ -50,10 +50,8 @@ export function nuorequst(url) {
             const contentType = response.headers['content-type'];
             if (contentType.includes('xml')) {
                 // 如果是XML，则将其解析为JSON
-                console.log(response.data)
-                const jsonResult = xmljs.xml2json(response.data, { compact: true, spaces: 2 });
-                console.log(jsonResult)
-                nuodata.value = JSON.parse(jsonResult);
+                const jsonResult = xmljs.xml2js(response.data, { compact: true, spaces: 4 });
+                nuodata.value = jsonResult
             } else {
                 // 如果是JSON，则直接使用响应数据
                 nuodata.value = response.data;

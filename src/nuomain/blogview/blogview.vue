@@ -1,12 +1,14 @@
 <template>
-  <div v-for="item in nuodata['feed']['entry']">
-    <p>{{ item['title']['_text'] }}</p>
-    <p>{{ item['updated']['_text'] }}</p>
-    <p>{{ item['updated']['_text'] }}</p>
-    <a :href="item['link']['_attributes']['href'] ">{{ item['link']['_attributes']['href'] }}</a>
+  <div class="nuoyis-blogview">
+    <div class="nuoyis-blog-essay-view" v-for="item in nuodata.feed.entry">
+      <p>{{ item.title._text }}</p>
+      <p>编写/更新时间:{{ item.updated._text }}</p>
+      <p v-if="item.summary">{{ item.summary._text.replace(/<[^>]+>/g,"") }}...</p>
+      <p v-else>没有简介哦</p>
+      <a :href="item.link._attributes.href ">查看更多</a>
 <!--    <p>{{ item['_attribute']['type'] }}</p>-->
+    </div>
   </div>
-  {{ nuodata['feed']['entry'][1]['_attribute']['type'] }}
 </template>
 
 <script setup>
@@ -24,3 +26,19 @@ const { nuostatus, nuodata } = nuorequst('https://blog.nuoyis.net/atom.xml');
 // const nuofeed = extractFromXml(xml)
 // console.log(nuofeed)
 </script>
+
+<style scoped>
+.nuoyis-blogview{
+  width:80%;
+  height:auto;
+  margin:0 auto;
+  margin-bottom:5%;
+}
+.nuoyis-blogview .nuoyis-blog-essay-view{
+  margin-bottom: 2%;
+}
+.nuoyis-blogview .nuoyis-blog-essay-view a{
+  text-decoration: none;
+  color:wheat;
+}
+</style>
