@@ -1,5 +1,9 @@
 <template>
   <div class="nuoyis-blogview">
+    <div class="nuoyis-biaoti">
+      <h1>诺依阁的日记簿 - 文章展示</h1>
+      <span class="nuoyis-biaoti-underline"></span>
+    </div>
     <div class="nuoyis-blog-essay-view" v-for="item in nuodata.feed.entry">
       <p>{{ item.title._text }}</p>
       <p>编写/更新时间:{{ item.updated._text }}</p>
