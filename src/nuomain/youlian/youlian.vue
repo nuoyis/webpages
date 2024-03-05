@@ -76,8 +76,9 @@
       </a>
     </div>
     <div>
-      <router-link to="/aboutme" class="routerbtn">上一页(站长介绍)</router-link>
-      <router-link to="/" class="routerbtn">首页</router-link>
+      <router-link to="/history" class="routerbtn">上一页(建站历史)</router-link>
+
+      <router-link to="/blogview" class="routerbtn">下一页(博客简单展示)</router-link>
     </div>
   </div>
 </template>

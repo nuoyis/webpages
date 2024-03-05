@@ -11,7 +11,7 @@
         当前北京时间:{{ currentTime }}
       </p>
       <div>
-        <router-link to="/aboutme" class="routerbtn">点击查看</router-link>
+        <router-link to="/aboutintroduce" class="routerbtn">点击查看</router-link>
       </div>
     </div>
   </div>

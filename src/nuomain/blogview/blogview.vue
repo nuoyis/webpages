@@ -13,6 +13,10 @@
 <!--    <p>{{ item['_attribute']['type'] }}</p>-->
     </div>
   </div>
+  <div>
+    <router-link to="/youlian" class="routerbtn">上一页(友链)</router-link>
+    <router-link to="/" class="routerbtn">首页</router-link>
+  </div>
 </template>
 
 <script setup>
