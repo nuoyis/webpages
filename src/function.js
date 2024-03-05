@@ -1,5 +1,6 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import axios from "axios";
+import xmljs from 'xml-js';
 
 // 按照惯例，组合式函数名以“use”开头
 export function useMouse() {
@@ -40,16 +41,28 @@ export function nuotime() {
 }
 
 export function nuorequst(url) {
-    const nuostatus = ref(200)
-    const nuodata = ref(null)
-    axios
-        .get(url)
+    const nuostatus = ref(200);
+    const nuodata = ref(null);
+
+    axios.get(url)
         .then(response => {
-            nuodata.value = response;
+            //判断响应的Content-Type是否为XML
+            const contentType = response.headers['content-type'];
+            if (contentType.includes('xml')) {
+                // 如果是XML，则将其解析为JSON
+                console.log(response.data)
+                const jsonResult = xmljs.xml2json(response.data, { compact: true, spaces: 2 });
+                console.log(jsonResult)
+                nuodata.value = JSON.parse(jsonResult);
+            } else {
+                // 如果是JSON，则直接使用响应数据
+                nuodata.value = response.data;
+            }
         })
         .catch(error => {
             nuostatus.value = 500;
-            nuodata.value = response;
-    })
-    return { nuostatus, nuodata }
+            nuodata.value = error.response ? error.response.data : error;
+        });
+
+    return { nuostatus, nuodata };
 }

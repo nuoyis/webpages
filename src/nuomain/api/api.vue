@@ -8,7 +8,7 @@
     <p v-else>api接口名单请求状态:异常</p>
     <p>目前推出的API调用</p>
     <div class="nuoyis-api" id="nuoyis-api">
-        <router-link class="nuoyis-api-url" v-for="api in nuodata.data" :to="{ path:'/apiquery',query:{id:api.id}}">
+        <router-link class="nuoyis-api-url" v-for="api in nuodata" :to="{ path:'/apiquery',query:{id:api.id}}">
         <i class="nuoyis-api-images"></i>
         <div class="nuoyis-api-text">
           <h2>{{ api.name }}</h2>
