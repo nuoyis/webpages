@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from "@/nuomain/index/index.vue";
 import NotFound from "@/nuomain/404/404.vue";
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css'; // 导入NProgress的样式
 
 const router = createRouter({
     history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -72,5 +74,17 @@ const router = createRouter({
         },
     ]
 })
+
+
+router.beforeEach((to, from, next) => {
+    // 在每次路由切换时，开始显示进度条
+    NProgress.start();
+    next();
+});
+
+router.afterEach(() => {
+    // 在路由切换完成后，停止进度条
+    NProgress.done();
+});
 
 export default router

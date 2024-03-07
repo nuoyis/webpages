@@ -1,6 +1,8 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import axios from "axios";
 import xmljs from 'xml-js';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css'; // 导入NProgress的样式
 
 // 按照惯例，组合式函数名以“use”开头
 export function useMouse() {
@@ -45,22 +47,32 @@ export function nuorequst(url) {
     const nuodata = ref(null);
 
     const get = () => {
+        NProgress.start(); // 启动进度条
+
         axios.get(url)
             .then(response => {
                 handleResponse(response);
             })
             .catch(error => {
                 handleError(error);
+            })
+            .finally(() => {
+                NProgress.done(); // 无论请求成功或失败都停止进度条
             });
     };
 
     const post = (data) => {
+        NProgress.start(); // 启动进度条
+
         axios.post(url, data)
             .then(response => {
                 handleResponse(response);
             })
             .catch(error => {
                 handleError(error);
+            })
+            .finally(() => {
+                NProgress.done(); // 无论请求成功或失败都停止进度条
             });
     };
 
@@ -85,6 +97,7 @@ export function nuorequst(url) {
 
     return { nuostatus, nuodata, get, post };
 }
+
 /**
  * Parse the time to string
  * @param {(Object|string|number)} time
