@@ -27,7 +27,8 @@
 
 <script setup>
 import { nuorequst } from '@/function.js'
-const { nuostatus, nuodata } = nuorequst('https://server-api.nuoyis.net/jiekou.json')
+const { nuostatus, nuodata, get, post } = nuorequst('https://server-api.nuoyis.net/jiekou.json')
+get();
 </script>
 
 <style scoped>

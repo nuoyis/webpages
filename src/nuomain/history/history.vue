@@ -25,8 +25,9 @@
 
 <script setup>
 import { nuorequst, nuotime } from '@/function.js';
-const { nuostatus, nuodata } = nuorequst('https://server-api.nuoyis.net/history.json')
+const { nuostatus, nuodata, get, post } = nuorequst('https://server-api.nuoyis.net/history.json')
 const { nowdate, currentTime } = nuotime()
+get();
 </script>
 
 <style scoped>

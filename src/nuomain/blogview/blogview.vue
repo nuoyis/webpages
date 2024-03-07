@@ -22,7 +22,8 @@
 <script setup>
 import { nuorequst } from '@/function.js';
 // import { extractFromXml } from '@extractus/feed-extractor'
-const { nuostatus, nuodata } = nuorequst('https://blog.nuoyis.net/atom.xml');
+const { nuostatus, nuodata, get, post } = nuorequst('https://blog.nuoyis.net/atom.xml');
+get();
 // import {extract, extractFromXml} from "@extractus/feed-extractor";
 // const url = 'https://blog.nuoyis.net/atom.xml'
 // // this resource provides data in ATOM feed format
