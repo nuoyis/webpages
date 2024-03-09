@@ -1,8 +1,7 @@
 <template>
-  <div class="nuoyis-biaoti">
-    <h1>html文本编辑器</h1>
-    <span class="nuoyis-biaoti-underline"></span>
-  </div>
+  <nuotitle>
+    <template #nuoyis-biaoti-text>html文本编辑器</template>
+  </nuotitle>
   <div class="nuoyis-htmlview">
     <div class="editor">
       <textarea v-model="htmlContent" placeholder="请在这里输入你的html代码"></textarea>
@@ -13,6 +12,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import Nuotitle from "@/wabpages/nuotitle.vue";
 
 const htmlContent = ref('')
 

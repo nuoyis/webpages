@@ -22,3 +22,31 @@ defineProps({
   }
 })
 </script>
+
+<style scoped>
+.nuoyis-nav{
+  width: 100%;
+  height: 10%;
+}
+
+.nuoyis-nav-text{
+  width:80%;
+  padding:15px 15px 15px 15px;
+  margin:0 auto;
+}
+
+.nuoyis-nav-left{
+  float:left;
+}
+
+.nuoyis-nav-right li{
+  float:right;
+  list-style:none;
+  margin-right:5%;
+}
+
+.nuoyis-nav-left a,.nuoyis-nav-right a{
+  color:white;
+  text-decoration: none;
+}
+</style>

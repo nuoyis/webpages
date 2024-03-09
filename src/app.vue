@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import nuohead from '@/nuomain/header/header.vue'
-import nuoindex from '@/nuomain/nuorouter.vue'
-import nuofooter from '@/nuomain/footer/footer.vue'
+import nuohead from '@/wabpages/header.vue'
+import nuoindex from '@/wabpages/nuorouter.vue'
+import nuofooter from '@/wabpages/footer.vue'
 </script>

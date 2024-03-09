@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from "@/nuomain/index/index.vue";
-import NotFound from "@/nuomain/404/404.vue";
+import Home from "@/wabpages/index.vue";
+import NotFound from "@/wabpages/404.vue";
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css'; // 导入NProgress的样式
 
@@ -22,7 +22,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/aboutintroduce/aboutintroduce.vue')
+            component: () => import('@/wabpages/aboutintroduce.vue')
         },
         {
             path: '/youlian',
@@ -30,7 +30,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/youlian/youlian.vue')
+            component: () => import('@/wabpages/youlian.vue')
         },
         {
             path: '/api',
@@ -38,7 +38,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/api/api.vue')
+            component: () => import('@/wabpages/api.vue')
         },
         {
             path: '/apiquery',
@@ -46,7 +46,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/api/apiquery.vue')
+            component: () => import('@/wabpages/apiquery.vue')
         },
         {
             path: '/blogview',
@@ -54,7 +54,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/blogview/blogview.vue')
+            component: () => import('@/wabpages/blogview.vue')
         },
         {
             path: '/history',
@@ -62,7 +62,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/history/history.vue')
+            component: () => import('@/wabpages/history.vue')
         },
         {
             path: '/uptimerobot',
@@ -70,7 +70,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/uptimerobot/uptimerobot.vue')
+            component: () => import('@/wabpages/uptimerobot.vue')
         },
         {
             path: '/serverstatus',
@@ -78,7 +78,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/serverstatus/serverstatus.vue')
+            component: () => import('@/wabpages/serverstatus.vue')
         },
         {
             path: '/htmlview',
@@ -86,7 +86,7 @@ const router = createRouter({
             // route level code-splitting
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
-            component: () => import('@/nuomain/htmlview/htmlview.vue')
+            component: () => import('@/wabpages/htmlview.vue')
         },
     ]
 })

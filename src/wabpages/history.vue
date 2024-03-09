@@ -1,9 +1,8 @@
 <template>
+  <nuotitle>
+    <template #nuoyis-biaoti-text>建站历史 - 一个建站流水线</template>
+  </nuotitle>
   <div class="nuoyis-history">
-    <div class="nuoyis-biaoti">
-      <h1>建站历史 - 一个建站流水线</h1>
-      <span class="nuoyis-biaoti-underline"></span>
-    </div>
     <ul id="line">
       <li v-for="data in nuodata">
         <div class="focus"></div>
@@ -25,6 +24,7 @@
 
 <script setup>
 import { nuorequst, nuotime } from '@/function.js';
+import Nuotitle from "@/wabpages/nuotitle.vue";
 const { nuostatus, nuodata, get, post } = nuorequst('https://server-api.nuoyis.net/history.json')
 const { nowdate, currentTime } = nuotime()
 get();

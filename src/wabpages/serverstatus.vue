@@ -1,10 +1,9 @@
 <template>
+  <nuotitle>
+    <template #nuoyis-biaoti-text>探针 - 监测服务器稳定/正常</template>
+  </nuotitle>
   <link href="/semantic.min.css" type="text/css" rel="stylesheet" />
   <div class="nuoyis-serverstatus">
-    <div class="nuoyis-biaoti">
-      <h1>探针 - 监测服务器稳定/正常</h1>
-      <span class="nuoyis-biaoti-underline"></span>
-    </div>
     <p>每隔10秒更新一次</p>
     <table>
       <thead>
@@ -60,6 +59,7 @@
 </template>
 <script setup>
 import { nuorequst, nuotime } from '@/function.js';
+import Nuotitle from "@/wabpages/nuotitle.vue";
 const { nuostatus, nuodata, get, post } = nuorequst('https://serverstatus.nuoyis.net/stats.json')
 const fetchData = () => {
   get();

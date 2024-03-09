@@ -1,9 +1,8 @@
 <template>
+  <nuotitle>
+    <template #nuoyis-biaoti-text>API调用 - 诺依阁旗下最快最稳定的API</template>
+  </nuotitle>
   <div class="nuoyis-api-main">
-    <div class="nuoyis-biaoti">
-      <h1>API调用 - 诺依阁旗下最快最稳定的API</h1>
-      <span class="nuoyis-biaoti-underline"></span>
-    </div>
     <p v-if=" nuostatus===200 ">api接口名单请求状态:正常</p>
     <p v-else>api接口名单请求状态:异常</p>
     <p>目前推出的API调用</p>
@@ -26,6 +25,7 @@
   </div>
 </template>
 <script setup>
+import nuotitle from '@/wabpages/nuotitle.vue'
 import { nuorequst } from '@/function.js'
 const { nuostatus, nuodata, get, post } = nuorequst('https://server-api.nuoyis.net/jiekou.json')
 get();

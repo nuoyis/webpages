@@ -1,6 +1,8 @@
 <template>
+  <nuotitle>
+    <template #nuoyis-biaoti-text>合作开发者企业</template>
+  </nuotitle>
   <div class="nuoyis-youlian">
-    <div class="nuoyis-biaoti"><h1>合作开发者企业</h1><span class="nuoyis-biaoti-underline"></span></div>
     <div class="nuoyis-project" id="nuoyis-project">
       <a class="nuoyis-project-url" href="https://www.aliyun.com">
         <i class="nuoyis-project-images"></i>
@@ -83,4 +85,5 @@
   </div>
 </template>
 <script setup>
+import Nuotitle from "@/wabpages/nuotitle.vue";
 </script>

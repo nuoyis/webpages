@@ -1,4 +1,7 @@
 <template>
+  <nuotitle>
+    <template #nuoyis-biaoti-text>API调用详细页面</template>
+  </nuotitle>
 <div class="nuoyis-api-query">
   <div class="nuoyis-api-query-frame">
   <p>请求地址</p>
@@ -27,6 +30,7 @@
 
 <script setup>
 import { nuorequst } from '@/function.js'
+import nuotitle from "@/wabpages/nuotitle.vue";
 const { nuostatus, nuodata, get, post } = nuorequst('https://server-api.nuoyis.net/jiekou.json')
 get();
 </script>

@@ -1,9 +1,8 @@
 <template>
+  <nuotitle>
+    <template #nuoyis-biaoti-text>诺依阁的日记簿 - 文章展示</template>
+  </nuotitle>
   <div class="nuoyis-blogview">
-    <div class="nuoyis-biaoti">
-      <h1>诺依阁的日记簿 - 文章展示</h1>
-      <span class="nuoyis-biaoti-underline"></span>
-    </div>
     <div class="nuoyis-blog-essay-view" v-for="item in nuodata.feed.entry">
       <p>{{ item.title._text }}</p>
       <p>编写/更新时间:{{ item.updated._text }}</p>
@@ -21,6 +20,7 @@
 
 <script setup>
 import { nuorequst } from '@/function.js';
+import Nuotitle from "@/wabpages/nuotitle.vue";
 // import { extractFromXml } from '@extractus/feed-extractor'
 const { nuostatus, nuodata, get, post } = nuorequst('https://blog.nuoyis.net/atom.xml');
 get();
