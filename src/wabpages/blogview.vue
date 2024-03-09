@@ -12,10 +12,8 @@
 <!--    <p>{{ item['_attribute']['type'] }}</p>-->
     </div>
   </div>
-  <div>
-    <router-link to="/youlian" class="routerbtn">上一页(友链)</router-link>
-    <router-link to="/" class="routerbtn">首页</router-link>
-  </div>
+  <button @click="$router.push('/youlian')" class="routerbtn">上一页(友链)</button>
+  <button @click="$router.push('/')" class="routerbtn">首页</button>
 </template>
 
 <script setup>

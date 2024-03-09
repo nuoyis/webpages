@@ -77,13 +77,74 @@
         </div>
       </a>
     </div>
-    <div>
-      <router-link to="/history" class="routerbtn">上一页(建站历史)</router-link>
-
-      <router-link to="/blogview" class="routerbtn">下一页(博客简单展示)</router-link>
-    </div>
+    <button @click="$router.push('/history')" class="routerbtn">上一页(建站历史)</button>
+    <button @click="$router.push('/blogview')" class="routerbtn">下一页(博客简单展示)</button>
   </div>
 </template>
 <script setup>
 import Nuotitle from "@/wabpages/nuotitle.vue";
 </script>
+
+<style scoped>
+.nuoyis-project {
+  display: grid;
+  padding: 0px 8%;
+  color: #66CCFF;
+  grid-gap: 30px;
+  padding-bottom: 3rem;
+  text-decoration: none;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.nuoyis-project-url {
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color:#f2f2f2;
+  box-shadow: 4px 6px 16px gray;
+  transition: transform 0.5s,background 0.5s;
+}
+
+.nuoyis-project-url i {
+  font-size: 40px;
+  color: #303ef7;
+}
+
+.nuoyis-project-url h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.nuoyis-project-url:hover {
+  background: #303ef7;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.nuoyis-project-url:hover i {
+  color: #fff;
+}
+
+.nuoyis-project-text{
+  color: black;
+  padding: 20px 20px;
+}
+
+.nuoyis-project-text p{
+  margin:0;
+  font-size: 10px;
+}
+
+.nuoyis-project-images{
+  height: 150px;
+  display: block;
+  position: relative;
+  background-image: url(../img/morenbackground.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+</style>

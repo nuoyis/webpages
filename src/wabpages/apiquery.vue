@@ -22,10 +22,8 @@
   <pre>状态: {{ nuodata[$route.query.id-1].state }},{{ nuodata[$route.query.id-1].sj }} </pre>
   </div>
 </div>
-  <div>
-    <router-link to="/api" class="routerbtn">返回上页</router-link>
-    <router-link to="/" class="routerbtn">首页</router-link>
-  </div>
+  <button @click="$router.push('/api')" class="routerbtn">返回上页</button>
+  <button @click="$router.push('/')" class="routerbtn">首页</button>
 </template>
 
 <script setup>

@@ -16,10 +16,8 @@
       </li>
     </ul>
   </div>
-  <div>
-    <router-link to="/aboutintroduce" class="routerbtn">上一页(站长介绍)</router-link>
-    <router-link to="/youlian" class="routerbtn">下一页(友链)</router-link>
-  </div>
+  <button @click="$router.push('/aboutintroduce')" class="routerbtn">上一页(站长介绍)</button>
+  <button @click="$router.push('/youlian')" class="routerbtn">下一页(友链)</button>
 </template>
 
 <script setup>

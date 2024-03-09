@@ -10,9 +10,7 @@
         指针方位: X轴:{{ x }}, Y轴{{ y }}<br/>
         当前北京时间:{{ currentTime }}
       </p>
-      <div>
-        <router-link to="/aboutintroduce" class="routerbtn">点击查看</router-link>
-      </div>
+        <button @click="$router.push('/aboutintroduce')" class="routerbtn">点击查看</button>
     </div>
   </div>
 </template>
