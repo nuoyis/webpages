@@ -22,7 +22,7 @@
 
 <script setup>
 import { nuorequst, nuotime } from '@/function.js';
-import Nuotitle from "@/wabpages/nuotitle.vue";
+import Nuotitle from "@/wabpages/public/nuotitle.vue";
 const { nuostatus, nuodata, get, post } = nuorequst('https://server-api.nuoyis.net/history.json')
 const { nowdate, currentTime } = nuotime()
 get();

@@ -11,7 +11,7 @@
 .nuoyis-biaoti{
   font-weight: bold;
   text-align: center;
-  margin-bottom: calc(3vw);
+  margin: calc(5vw) calc(5vw) calc(5vw) calc(5vw);
 }
 
 .nuoyis-biaoti-underline{

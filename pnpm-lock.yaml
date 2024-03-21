@@ -8,6 +8,9 @@ dependencies:
   '@extractus/feed-extractor':
     specifier: ^7.0.9
     version: 7.0.9
+  '@varlet/ui':
+    specifier: ^3.1.3
+    version: 3.1.3(vue@3.4.21)
   axios:
     specifier: ^1.6.7
     version: 1.6.7
@@ -279,6 +282,10 @@ packages:
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
+  /@popperjs/core@2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: false
+
   /@rollup/rollup-android-arm-eabi@4.12.0:
     resolution: {integrity: sha512-+ac02NL/2TCKRrJu2wffk1kZ+RyqxVUlbjSagNgPm94frxtr+XDL12E5Ll1enWskLrtrZ2r8L3wED1orIibV/w==}
     cpu: [arm]
@@ -391,6 +398,37 @@ packages:
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
+
+  /@varlet/icons@3.1.3:
+    resolution: {integrity: sha512-KcGErcYaG+AYkGmWDhnhO0BHDOWnICDoDTHk4IYiYPTbYk4a14PuCAyPNPiGwJKgsz0i0gJ0OJZgM12DlhaIKQ==}
+    dev: false
+
+  /@varlet/shared@3.1.3:
+    resolution: {integrity: sha512-wrcifKAQNHPdKkqYzh40RIKSkKaVwPfq8BnwsygljBGtV3EYHQXCxsVzI6UMi9FeqbnP3wg+wo37R55ssVMF4g==}
+    dev: false
+
+  /@varlet/ui@3.1.3(vue@3.4.21):
+    resolution: {integrity: sha512-YTEO6wNlc6pzfCPLqGFmd0pAYPijEjAjjwCRTvC1qSJRLIzbUWZp92F7XuX8N7BhkxKRJjiyRdNqKSDyZLulhA==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@popperjs/core': 2.11.8
+      '@varlet/icons': 3.1.3
+      '@varlet/shared': 3.1.3
+      '@varlet/use': 3.1.3(vue@3.4.21)
+      dayjs: 1.11.10
+      decimal.js: 10.4.3
+      vue: 3.4.21
+    dev: false
+
+  /@varlet/use@3.1.3(vue@3.4.21):
+    resolution: {integrity: sha512-DgDDXzpdijsmDRehGJHKERp+Zd/Au72Ch8FTRZQ5TNqJKjTY4CD/7Sod3J9gfR7I/GZJ4QcduQqTKKDJOeH1Hw==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@varlet/shared': 3.1.3
+      vue: 3.4.21
+    dev: false
 
   /@vitejs/plugin-vue@5.0.4(vite@5.1.4)(vue@3.4.21):
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
@@ -507,6 +545,14 @@ packages:
 
   /csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  /dayjs@1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+    dev: false
+
+  /decimal.js@10.4.3:
+    resolution: {integrity: sha512-VBBaLc1MgL5XpzgIP7ny5Z6Nx3UrRkIViUkPUdtl9aya5amy3De1gsUUSB1g3+3sExYNjCAsAznmukyxCb1GRA==}
+    dev: false
 
   /delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}

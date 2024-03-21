@@ -28,7 +28,7 @@
 
 <script setup>
 import { nuorequst } from '@/function.js'
-import nuotitle from "@/wabpages/nuotitle.vue";
+import nuotitle from "@/wabpages/public/nuotitle.vue";
 const { nuostatus, nuodata, get, post } = nuorequst('https://server-api.nuoyis.net/jiekou.json')
 get();
 </script>

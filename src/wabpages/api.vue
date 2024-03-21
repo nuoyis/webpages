@@ -1,4 +1,5 @@
 <template>
+  <fab></fab>
   <nuotitle>
     <template #nuoyis-biaoti-text>API调用 - 诺依阁旗下最快最稳定的API</template>
   </nuotitle>
@@ -23,8 +24,9 @@
   <button @click="$router.push('/')" class="routerbtn">首页</button>
 </template>
 <script setup>
-import nuotitle from '@/wabpages/nuotitle.vue'
+import nuotitle from '@/wabpages/public/nuotitle.vue'
 import { nuorequst } from '@/function.js'
+import Fab from "@/wabpages/public/fab.vue";
 const { nuostatus, nuodata, get, post } = nuorequst('https://server-api.nuoyis.net/jiekou.json')
 get();
 </script>

@@ -1,4 +1,5 @@
 <template>
+  <fab></fab>
   <nuotitle>
     <template #nuoyis-biaoti-text>探针 - 监测服务器稳定/正常</template>
   </nuotitle>
@@ -72,7 +73,8 @@
 </template>
 <script setup>
 import { nuorequst, nuotime } from '@/function.js';
-import Nuotitle from "@/wabpages/nuotitle.vue";
+import Nuotitle from "@/wabpages/public/nuotitle.vue";
+import Fab from "@/wabpages/public/fab.vue";
 const { nuostatus, nuodata, get, post } = nuorequst('https://serverstatus.nuoyis.net/stats.json')
 const fetchData = () => {
   get();

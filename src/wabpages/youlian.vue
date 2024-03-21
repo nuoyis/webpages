@@ -1,4 +1,5 @@
 <template>
+  <fab></fab>
   <nuotitle>
     <template #nuoyis-biaoti-text>合作开发者企业</template>
   </nuotitle>
@@ -82,5 +83,6 @@
   </div>
 </template>
 <script setup>
-import Nuotitle from "@/wabpages/nuotitle.vue";
+import Nuotitle from "@/wabpages/public/nuotitle.vue";
+import Fab from "@/wabpages/public/fab.vue";
 </script>

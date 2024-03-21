@@ -1,4 +1,5 @@
 <template>
+  <fab></fab>
   <nuotitle>
     <template #nuoyis-biaoti-text>诺依阁的日记簿 - 文章展示</template>
   </nuotitle>
@@ -18,7 +19,8 @@
 
 <script setup>
 import { nuorequst } from '@/function.js';
-import Nuotitle from "@/wabpages/nuotitle.vue";
+import Nuotitle from "@/wabpages/public/nuotitle.vue";
+import Fab from "@/wabpages/public/fab.vue";
 // import { extractFromXml } from '@extractus/feed-extractor'
 const { nuostatus, nuodata, get, post } = nuorequst('https://blog.nuoyis.net/atom.xml');
 get();

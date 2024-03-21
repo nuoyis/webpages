@@ -1,4 +1,5 @@
 <template>
+  <fab></fab>
   <nuotitle>
     <template #nuoyis-biaoti-text>html文本编辑器</template>
   </nuotitle>
@@ -12,7 +13,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import Nuotitle from "@/wabpages/nuotitle.vue";
+import Nuotitle from "@/wabpages/public/nuotitle.vue";
+import Fab from "@/wabpages/public/fab.vue";
 
 const htmlContent = ref('')
 

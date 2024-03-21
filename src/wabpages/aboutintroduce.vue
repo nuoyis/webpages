@@ -1,4 +1,5 @@
 <template>
+  <fab></fab>
   <div class="nuoyis-main">
   <div class="nuoyis-about">
     <div class="nuoyis-biaoti">
@@ -17,4 +18,5 @@
   </div>
 </template>
 <script setup>
+import Fab from "@/wabpages/public/fab.vue";
 </script>

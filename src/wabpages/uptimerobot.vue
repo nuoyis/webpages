@@ -1,4 +1,5 @@
 <template>
+  <fab></fab>
   <nuotitle>
     <template #nuoyis-biaoti-text>站点状态监测</template>
   </nuotitle>
@@ -39,7 +40,8 @@
 
 <script setup>
 import { nuorequst, parseTime } from '@/function.js'
-import Nuotitle from "@/wabpages/nuotitle.vue";
+import Nuotitle from "@/wabpages/public/nuotitle.vue";
+import Fab from "@/wabpages/public/fab.vue";
 const { nuostatus, nuodata, get, post } = nuorequst('https://api.uptimerobot.com/v2/getMonitors')
 const postData = { api_key: 'ur1745273-524a0e88d422ce95b442a4dd', format: 'json', logs: '1', log_types: '1-2' };
 const fetchData = () => {
