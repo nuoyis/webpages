@@ -21,9 +21,16 @@
   <p>接口通知</p>
   <pre>状态: {{ nuodata[$route.query.id-1].state }},{{ nuodata[$route.query.id-1].sj }} </pre>
   </div>
+  <var-button
+      color="linear-gradient(to right bottom, #6750A4, #D0BCFF)"
+      text-color="#fff"
+      @click="$router.push('/api')"
+      style="margin-top:calc(2vh);"
+  >
+    返回上页
+  </var-button>
 </div>
-  <button @click="$router.push('/api')" class="routerbtn">返回上页</button>
-  <button @click="$router.push('/')" class="routerbtn">首页</button>
+
 </template>
 
 <script setup>

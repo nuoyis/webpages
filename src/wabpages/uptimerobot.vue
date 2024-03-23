@@ -3,7 +3,9 @@
   <nuotitle>
     <template #nuoyis-biaoti-text>站点状态监测</template>
   </nuotitle>
+
   <div class="nuoyis-uptimerobot">
+    <var-paper :elevation="4">
     <div class="nuoyis-uptimerobot-status">
       <div class="nuoyis-uptimerobot-item">
         <table>
@@ -35,7 +37,9 @@
         </table>
       </div>
     </div>
+  </var-paper>
   </div>
+
 </template>
 
 <script setup>
@@ -95,6 +99,9 @@ const UptimeRobottype = (type) => {
 .nuoyis-uptimerobot{
   width:70%;
   margin:0 auto;
+}
+.nuoyis-uptimerobot-status{
+  padding: calc(2vw) calc(2vw) calc(2vw) calc(2vw);
 }
 
 .status-up{

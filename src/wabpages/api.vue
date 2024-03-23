@@ -4,9 +4,9 @@
     <template #nuoyis-biaoti-text>API调用 - 诺依阁旗下最快最稳定的API</template>
   </nuotitle>
   <div class="nuoyis-api-main">
-    <p v-if=" nuostatus===200 ">api接口名单请求状态:正常</p>
-    <p v-else>api接口名单请求状态:异常<br/>请联系站长修复</p>
-    <p v-if=" nuostatus===200 ">目前推出的API调用</p>
+    <p class="nuoyis-api-stext" v-if=" nuostatus===200 ">api接口名单请求状态:正常</p>
+    <p class="nuoyis-api-stext" v-else>api接口名单请求状态:异常<br/>请联系站长修复</p>
+    <p class="nuoyis-api-stext" v-if=" nuostatus===200 ">目前推出的API调用</p>
     <div class="nuoyis-api" id="nuoyis-api" v-if=" nuostatus===200 ">
         <router-link class="nuoyis-api-url" v-for="api in nuodata" :to="{ path:'/apiquery',query:{id:api.id}}">
         <i class="nuoyis-api-images"></i>
@@ -21,7 +21,6 @@
       </router-link>
     </div>
   </div>
-  <button @click="$router.push('/')" class="routerbtn">首页</button>
 </template>
 <script setup>
 import nuotitle from '@/wabpages/public/nuotitle.vue'
@@ -40,6 +39,10 @@ get();
   padding-bottom: 3rem;
   text-decoration: none;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.nuoyis-api-stext{
+  padding: 10px 8%;
 }
 
 .nuoyis-api-url {
@@ -86,4 +89,5 @@ get();
   margin:0;
   font-size: 10px;
 }
+
 </style>

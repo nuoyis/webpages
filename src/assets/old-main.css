@@ -55,7 +55,7 @@
   height: 150px;
   display: block;
   position: relative;
-  background-image: url(../img/morenbackground.jpg);
+  background-image: url(../../public/img/morenbackground.jpg);
   background-size: cover;
   border-radius: 5px 5px 0 0;
   background-position: center;

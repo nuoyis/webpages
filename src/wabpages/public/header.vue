@@ -13,11 +13,23 @@
   <!--    </div>-->
   <!--  </div>-->
   <var-app-bar
-      title="诺依阁的技术树"
-      color="transparent"
+      color="linear-gradient(90deg, rgba(72,176,221,1) 0%, rgba(0,208,161,1) 100%)"
       text-color="black"
-      @click="$router.push('/')"
   >
+    <template #left>
+<!--      <nuoyis-var-link :round=false :block=true url="/"><template #nuoyis-url></template></nuoyis-var-link>-->
+      <var-button
+          color="transparent"
+          text
+          block
+          text-color="#555"
+          style="font-size:20px;"
+          @click="$router.push('/')"
+      >
+          诺依阁的技术树
+
+      </var-button>
+    </template>
     <template #right>
       <var-menu>
         <var-button
@@ -52,10 +64,12 @@
         </div>
         <nuoyis-var-link :round=false :block=true url="https://blog.nuoyis.net"><template #nuoyis-url>诺依阁的日常记录</template></nuoyis-var-link>
         <nuoyis-var-link :round=false :block=true url="https://api.nuoyis.net"><template #nuoyis-url>诺依阁的API</template></nuoyis-var-link>
-        <nuoyis-var-link :round=false :block=true url="https://status.nuoyis.net"><template #nuoyis-url>诺依阁的静态加速库</template></nuoyis-var-link>
+        <nuoyis-var-link :round=false :block=true url="https://status.nuoyis.net"><template #nuoyis-url>诺依阁的服务状态</template></nuoyis-var-link>
+        <nuoyis-var-link :round=false :block=true url="https://static.nuoyis.net"><template #nuoyis-url>诺依阁的静态加速库</template></nuoyis-var-link>
         <div class="popup-example-block" >
           ==================
           与站长共行,感受代码和技术之美
+          与技术宅一起走向下一个10年
         </div>
       </var-popup>
     </template>

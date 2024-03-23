@@ -19,10 +19,10 @@
     <var-button type="info" @click="$router.push('/blogview')"  icon-container>
       <var-icon name="checkbox-marked-circle" />
     </var-button>
-    <var-button type="info" @click="$router.push('/aboutintroduce')" icon-container>
+    <var-button type="info" @click="$router.push('/youlian')" icon-container>
       <var-icon name="bell" />
     </var-button>
-    <var-button type="info" @click="$router.push('/youlian')" icon-container>
+    <var-button type="info" @click="$router.push('/history')" icon-container>
       <var-icon name="history" />
     </var-button>
     <var-button type="info" @click="$router.push('/aboutintroduce')" icon-container>

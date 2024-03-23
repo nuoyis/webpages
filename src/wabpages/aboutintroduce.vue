@@ -12,8 +12,6 @@
       <p>从QQ机器人一路建设过来，虽然有时对人态度差，但仍尽力克制并对人道歉</p>
       <p>更多关于站长，请<a href="https://www.nuoyis.cn">点击这里</a>访问站长的个人介绍</p>
     </div>
-    <button @click="$router.push('/')" class="routerbtn">首页(上一页)</button>
-    <button @click="$router.push('/history')" class="routerbtn">下一页(建站历史)</button>
   </div>
   </div>
 </template>
