@@ -17,22 +17,6 @@ const router = createRouter({
             component: Home
         },
         {
-            path: '/aboutintroduce',
-            name: 'nuoyis-about',
-            // route level code-splitting
-            // this generates a separate chunk (About.[hash].js) for this route
-            // which is lazy-loaded when the route is visited.
-            component: () => import('@/wabpages/aboutintroduce.vue')
-        },
-        {
-            path: '/youlian',
-            name: 'youlian',
-            // route level code-splitting
-            // this generates a separate chunk (About.[hash].js) for this route
-            // which is lazy-loaded when the route is visited.
-            component: () => import('@/wabpages/youlian.vue')
-        },
-        {
             path: '/api',
             name: 'api',
             // route level code-splitting
@@ -55,14 +39,6 @@ const router = createRouter({
             // this generates a separate chunk (About.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
             component: () => import('@/wabpages/blogview.vue')
-        },
-        {
-            path: '/history',
-            name: 'history',
-            // route level code-splitting
-            // this generates a separate chunk (About.[hash].js) for this route
-            // which is lazy-loaded when the route is visited.
-            component: () => import('@/wabpages/history.vue')
         },
         {
             path: '/uptimerobot',

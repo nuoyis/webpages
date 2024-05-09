@@ -12,6 +12,10 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
+    },
+    compilerOptions: {
+      // 将所有带短横线的标签名都视为自定义元素
+      isCustomElement: (tag) => tag.includes('mdui-')
     }
   }
 })

@@ -77,7 +77,6 @@
 </template>
 <script setup>
 import {ref} from "vue";
-import { StyleProvider, Themes } from '@varlet/ui'
 import NuoyisVarLink from "@/wabpages/public/nuoyis-var-link.vue";
 
 defineProps({
