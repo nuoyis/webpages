@@ -29,8 +29,10 @@
   <nuotitle>
     <template #nuoyis-biaoti-text>绿色环保</template>
   </nuotitle>
-  <div>
+  <div class="nuoyis-huanbao">
+    <div class="nuoyis-zhengwen">
     <p>站长多年以绿色环保为理念,坚持未用完的纸张合理利用起来,坚持有用的纸箱用来做置物架。饭食光盘行动,所有对外提供90%上云。同时将性能低下的设备低价出售，完成电子设备的二次利用。</p>
+    </div>
   </div>
 <!--  历史页面 -->、
   <nuotitle>
@@ -177,6 +179,11 @@ defineProps({
   font-weight: bold;
   font-size: 25px;
   color:white;
+}
+
+.nuoyis-zhengwen{
+  width:75%;
+  margin: 0 auto;
 }
 
 .nuoyis-history{
